@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1282.0" minHeight="720.0" minWidth="1282.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.ManagerScreenController">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/znpbusjdcgv71.png-ezgif.com-webp-to-jpg-converter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="592.0" fitWidth="799.0" layoutX="576.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/DYwMgrdWkAAbRBw-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="273.0" fitWidth="660.0" layoutX="44.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/Screenshot%202024-03-23%20174853.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="370.0" fitWidth="294.0" layoutX="402.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/Untitled-3.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="349.0" fitWidth="373.0" layoutX="58.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/Untitled-3.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="577.0" layoutX="86.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/text-1711230221639.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="cusUser" layoutX="95.0" layoutY="449.0" prefHeight="38.0" prefWidth="224.0" promptText="username" />
+      <Button fx:id="create" layoutX="123.0" layoutY="572.0" mnemonicParsing="false" onAction="#AddCustomer" prefHeight="37.0" prefWidth="169.0" text="Create Customer">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button fx:id="logout" layoutX="263.0" layoutY="158.0" mnemonicParsing="false" onAction="#logOut" prefHeight="13.0" prefWidth="223.0" text="🔒Logout">
+         <font>
+            <Font name="Comic Sans MS Bold" size="32.0" />
+         </font></Button>
+      <Button fx:id="byeCustomer" layoutX="461.0" layoutY="534.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="56.0" prefWidth="178.0" text="Delete Customer">
+         <font>
+            <Font name="Comic Sans MS Bold" size="17.0" />
+         </font></Button>
+      <ComboBox fx:id="deleteDropDown" layoutX="427.0" layoutY="458.0" prefHeight="44.0" prefWidth="245.0" promptText="Customer to Delete" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/text-1711230733216.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="267.0" layoutX="76.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/text-1711230748713.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="449.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/text-1711230988608.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="258.0" layoutX="421.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Assests/text-1711230748713.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="incorrect" layoutX="83.0" layoutY="546.0" text=" " textFill="#aab530">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusPass" layoutX="95.0" layoutY="502.0" prefHeight="38.0" prefWidth="224.0" promptText="password" />
+      <Label fx:id="label" layoutX="126.0" layoutY="547.0" text="Only use Letters or Numbers" textFill="#aab530">
+         <font>
+            <Font name="Comic Sans MS Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="successDelete" layoutX="488.0" layoutY="513.0" textFill="#aab530" />
+      <Label fx:id="unableDelete" layoutX="490.0" layoutY="513.0" textFill="#aab530" />
+   </children>
+</AnchorPane>
